@@ -9,8 +9,6 @@ type WordInputProps = {
 
 export default function WordInput({ letters, status }: WordInputProps) {
   const boxes = Array.from({ length: MAX_INPUT_LENGTH }, (_, i) => letters[i] || "");
-
-  console.log(boxes);
   
   return (
     <div className={styles.wrapper}>
